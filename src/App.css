@@ -1,0 +1,296 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.page {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  border: 1px solid black; /* thin black border like paper edge */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+
+  border-radius: 8px; /* slightly rounded corners */
+  padding: 20px; /* space inside like a paper margin */
+}
+
+.header {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 60%; /* vertical center of the div */
+  left: 0;
+  width: 100%; /* full width of the div */
+  height: 15px; /* thickness of the line */
+  background-color: rgba(68, 69, 89, 0.75);
+  transform: translateY(-50%); /* center the line exactly on middle */
+  z-index: 0;
+}
+
+.header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.header_prof_pic {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+}
+
+.header_prof_pic img {
+  height: 100%;
+  aspect-ratio: 1 / 1; /* makes container a square dynamically */
+}
+
+.header_info_right {
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+  height: 100%;
+}
+
+.header_info_name {
+  display: flex;
+  flex-direction: column;
+  height: 58%;
+  width: 100%;
+}
+
+.header_info_name h1 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 3.5em;
+  font-family: "Comic Sans MS";
+}
+
+.header_info_name h4 {
+  margin: 0;
+  font-family: "Comic Sans MS";
+}
+
+.header_info_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42%;
+  width: 100%;
+  font-family: "Comic Sans MS";
+}
+
+.header_info_links a {
+  color: black; /* link color */
+  text-decoration: none; /* remove underline */
+  padding: 0 15px; /* spacing around the links */
+  font-weight: bold; /* optional: make text bolder */
+  font-family: "Comic Sans MS";
+  font-size: 110%;
+}
+
+.center_left {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  justify-content: left;
+  width: 33%;
+  height: 100%;
+  font-family: "Comic Sans MS";
+}
+
+.center_left_title {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0px;
+}
+
+.icon {
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.icon_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.icon_title h1 {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.center_left_info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 92px;
+  padding-right: 20px;
+}
+
+.center_left_sub_info {
+  display: flex;
+  align-items: flex-start;
+
+  padding: 5px 20px;
+}
+
+.center_left_sub_info a {
+  color: black; /* link color */
+  text-decoration: none; /* remove underline */
+}
+
+.center_left_info h3 {
+  color: black; /* link color */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.center {
+  display: flex;
+}
+
+.center_right {
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+  /*border: 1px solid blue;*/
+  padding: 30px;
+  padding-bottom: 0px;
+  font-family: "Comic Sans MS";
+}
+
+.employment_box {
+  display: flex;
+  /*border: 1px solid black;*/
+}
+
+.employment_title {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.employment_title h2 {
+  margin: 0px;
+  font-size: 180%;
+}
+
+.employment_title h3 {
+  margin: 0px;
+  font-size: 110%;
+}
+
+.job_icon {
+  display: flex;
+  width: 45px;
+  opacity: 75%;
+}
+
+.employment_sub {
+  display: flex;
+  /*border: 1px solid green;*/
+  padding-top: 10px;
+}
+
+.employment_sub_icon {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  width: 45px;
+  margin: 0px;
+  padding-top: 8px;
+  /*border: 1px solid red;*/
+}
+
+.employment_sub_company {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  padding-left: 20px;
+  /*border: 1px solid purple;*/
+  font-size: 110%;
+}
+
+.employment_sub_company h2,
+h4,
+h6 {
+  margin: 0px;
+}
+
+.employment_desc {
+  display: flex;
+  text-align: left;
+  padding-left: 65px;
+  padding-top: 10px;
+}
+
+.employment_desc h3 {
+  margin: 0px;
+}
+
+.education_box {
+  display: flex;
+  flex-direction: ;
+  margin: 0px;
+  padding-left: 65px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.education_box h4 {
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.skills_section {
+  display: flex;
+  width: 75%;
+  /*border: 1px solid red;*/
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.skills_section_icon {
+  display: flex;
+  width: 40%;
+  justify-content: flex-start;
+  align-content: flex-end;
+}
+
+.skills_section_rating {
+  display: flex;
+  width: 60%;
+  margin-right: 10px;
+  /*border: 1px solid green;*/
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.skills_section_rating > * {
+  flex-shrink: 1; /* allow icons to shrink */
+  min-width: 0; /* required for SVGs/icons to actually shrink */
+}
+
+.hobbies_section {
+  font-family: "Comic Sans MS";
+}
+
+.hobbies_icons_section {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: "0px";
+  font-size: "25px";
+  color: "black";
+}
