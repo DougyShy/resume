@@ -52,10 +52,10 @@ function App() {
             </div>
             <div className="header_info_links">
               <p class="nav-links">
-                <a href="#option1">PROFILE</a> |
-                <a href="#option2">EMPLOYMENT</a> |
-                <a href="#option3">EDUCATION</a> |<a href="#option4">SKILLS</a>{" "}
-                |<a href="#option5">CONTACT</a>
+                <a href="#profile">PROFILE</a> |
+                <a href="#employment">EMPLOYMENT</a> |
+                <a href="#education">EDUCATION</a> |<a href="#skills">SKILLS</a>{" "}
+                |<a href="#contact">CONTACT</a>
               </p>
             </div>
           </div>
@@ -72,7 +72,7 @@ function App() {
                   }}
                 />
               </div>
-              <div className="icon_title">
+              <div className="icon_title" id="profile">
                 <h1>PROFILE</h1>
               </div>
             </div>
@@ -100,7 +100,7 @@ function App() {
                 <GiSkills style={{ fontSize: "50px", color: "black" }} />
               </div>
 
-              <div className="icon_title">
+              <div className="icon_title" id="skills">
                 <h1>TECH SKILLS</h1>
               </div>
             </div>
@@ -211,7 +211,7 @@ function App() {
                 <BiSolidContact style={{ fontSize: "50px", color: "black" }} />
               </div>
 
-              <div className="icon_title">
+              <div className="icon_title" id="contact">
                 <h1>CONTACT</h1>
               </div>
             </div>
@@ -255,11 +255,11 @@ function App() {
               </div>
               <div className="center_left_sub_info">
                 <a
-                  href="https://github.com/DougyShy"
+                  href="https://dougyshy.github.io/resume/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://github.com/DougyShy
+                  dougyshy.github.io/resume/
                 </a>
               </div>
             </div>
@@ -304,7 +304,7 @@ function App() {
             </div>
           </div>
           <div className="center_right">
-            <div className="employment_box">
+            <div className="employment_box" id="education">
               <div className="employment_icon">
                 <PiGraduationCapFill
                   style={{
@@ -415,7 +415,7 @@ function App() {
                   }}
                 />
               </div>
-              <div className="employment_title">
+              <div className="employment_title" id="employment">
                 <h2>EMPLOYMENT HISTORY</h2>
               </div>
             </div>
