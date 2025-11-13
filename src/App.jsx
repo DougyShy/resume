@@ -32,7 +32,7 @@ import { FaDog } from "react-icons/fa";
 import { TbBrandTesla } from "react-icons/tb";
 import { FaBible } from "react-icons/fa";
 
-import profilePic from "/src/assets/profile.png";
+import profilePic from "/profile.png";
 
 function App() {
   return (
