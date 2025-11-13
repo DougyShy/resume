@@ -32,13 +32,15 @@ import { FaDog } from "react-icons/fa";
 import { TbBrandTesla } from "react-icons/tb";
 import { FaBible } from "react-icons/fa";
 
+import profilePic from "/src/assets/profile.png";
+
 function App() {
   return (
     <>
       <div className="page">
         <div className="header">
           <div className="header_prof_pic">
-            <img src="src/assets/profile.png"></img>
+            <img src={profilePic} alt="Profile" />
           </div>
           <div className="header_info_right">
             <div className="header_info_name">
